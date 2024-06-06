@@ -92,6 +92,20 @@ def see_horsepowers():
     db.close
 
 
+def see_weights():
+    db = sqlite3.connect(DATABASE)
+    cursor = db.cursor()
+    sql = "SELECT model, weight FROM motorcycle;"
+    cursor.execute(sql)
+    results = cursor.fetchall()
+    #Loop through all the results
+    print("\nModel              ", "Weight    ")
+    for motorcycle in results:
+        print(f"{motorcycle[0]:<20}{motorcycle[1]}")
+    #Loop finished
+    db.close
+
+
 def see_YZF_R6():
     db = sqlite3.connect(DATABASE)
     cursor = db.cursor()
@@ -234,7 +248,7 @@ def see_RSV4():
 
 #Main Code
 while True:
-    user_input = input("\nWhat would you like to do?\n1. Print all motorcycles\n2. See motorcycles from cheapest to most expensive\n3. See motorcycle manufacturers\n4. See motorcycle desriptions\n5. See top speeds\n6. See horsepowers\n7. See information on a specific motorycle\n8. Exit\n")
+    user_input = input("\nWhat would you like to do?\n1. Print all motorcycles\n2. See motorcycles from cheapest to most expensive\n3. See motorcycle manufacturers\n4. See motorcycle desriptions\n5. See top speeds\n6. See horsepowers\n7. See weights\n8. See information on a specific motorcycle\n9. Exit\n")
     if user_input == "1":
         print_all_motorcycles()
     elif user_input == "2":
@@ -248,6 +262,8 @@ while True:
     elif user_input == "6":
         see_horsepowers()
     elif user_input == "7":
+        see_weights()
+    elif user_input == "8":
         while True:
             user_input2 = input("\nWhich motorcycle would you like to see?\n1. YZF-R6\n2. CBR1000RR\n3. Ninja 400\n4. Panigale V4\n5. Street Glide\n6. GSX-R750\n7. S1000RR\n8. Street Triple\n9. Duke 390\n10. RSV4\n11. Return to Main Menu\n")
             if user_input2 == "1":
@@ -274,7 +290,7 @@ while True:
                 break
             else:
                 print("That was not an option.\n")
-    elif user_input == "8":
+    elif user_input == "9":
         break
     else:
         print("That was not an option.\n")
