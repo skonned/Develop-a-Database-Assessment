@@ -15,9 +15,9 @@ def print_all_motorcycles():
     cursor.execute(sql)
     results = cursor.fetchall()
     #Loop through all the results
-    print("\nModel              ", "Year          ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)        ", "Price (NZD)        ", "Description")
+    print("\nModel              ", "Year       ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)   ", "Price (NZD)      ", "Description")
     for motorcycle in results:
-        print(f"{motorcycle[1]:<20}{motorcycle[2]:<15}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<20}{motorcycle[7]:<20}{motorcycle[8]}")
+        print(f"{motorcycle[1]:<20}{motorcycle[2]:<12}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<15}{motorcycle[7]:<18}{motorcycle[8]}")
     #Loop finished
     db.close
 
@@ -142,9 +142,9 @@ def see_YZF_R6():
     cursor.execute(sql)
     results = cursor.fetchall()
     #Loop through all the results
-    print("\nModel         ", "Year          ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)        ", "Price (NZD)        ", "Description")
+    print("\nModel         ", "Year       ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)   ", "Price (NZD)      ", "Description")
     for motorcycle in results:
-        print(f"{motorcycle[1]:<15}{motorcycle[2]:<15}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<20}{motorcycle[7]:<20}{motorcycle[8]}")
+        print(f"{motorcycle[1]:<15}{motorcycle[2]:<12}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<15}{motorcycle[7]:<18}{motorcycle[8]}")
     #Loop finished
     db.close
 
@@ -156,9 +156,9 @@ def see_CBR1000RR():
     cursor.execute(sql)
     results = cursor.fetchall()
     #Loop through all the results
-    print("\nModel              ", "Year          ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)        ", "Price (NZD)        ", "Description")
+    print("\nModel          ", "Year       ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)   ", "Price (NZD)      ", "Description")
     for motorcycle in results:
-        print(f"{motorcycle[1]:<20}{motorcycle[2]:<15}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<20}{motorcycle[7]:<20}{motorcycle[8]}")
+        print(f"{motorcycle[1]:<16}{motorcycle[2]:<12}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<15}{motorcycle[7]:<18}{motorcycle[8]}")
     #Loop finished
     db.close
 
@@ -170,9 +170,9 @@ def see_Ninja_400():
     cursor.execute(sql)
     results = cursor.fetchall()
     #Loop through all the results
-    print("\nModel              ", "Year          ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)        ", "Price (NZD)        ", "Description")
+    print("\nModel           ", "Year       ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)   ", "Price (NZD)      ", "Description")
     for motorcycle in results:
-        print(f"{motorcycle[1]:<20}{motorcycle[2]:<15}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<20}{motorcycle[7]:<20}{motorcycle[8]}")
+        print(f"{motorcycle[1]:<17}{motorcycle[2]:<12}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<15}{motorcycle[7]:<18}{motorcycle[8]}")
     #Loop finished
     db.close
 
@@ -184,9 +184,9 @@ def see_Panigale_V4():
     cursor.execute(sql)
     results = cursor.fetchall()
     #Loop through all the results
-    print("\nModel              ", "Year          ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)        ", "Price (NZD)        ", "Description")
+    print("\nModel             ", "Year       ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)   ", "Price (NZD)      ", "Description")
     for motorcycle in results:
-        print(f"{motorcycle[1]:<20}{motorcycle[2]:<15}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<20}{motorcycle[7]:<20}{motorcycle[8]}")
+        print(f"{motorcycle[1]:<19}{motorcycle[2]:<12}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<15}{motorcycle[7]:<18}{motorcycle[8]}")
     #Loop finished
     db.close
 
@@ -198,9 +198,9 @@ def see_Street_Glide():
     cursor.execute(sql)
     results = cursor.fetchall()
     #Loop through all the results
-    print("\nModel              ", "Year          ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)        ", "Price (NZD)        ", "Description")
+    print("\nModel              ", "Year       ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)   ", "Price (NZD)      ", "Description")
     for motorcycle in results:
-        print(f"{motorcycle[1]:<20}{motorcycle[2]:<15}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<20}{motorcycle[7]:<20}{motorcycle[8]}")
+        print(f"{motorcycle[1]:<20}{motorcycle[2]:<12}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<15}{motorcycle[7]:<18}{motorcycle[8]}")
     #Loop finished
     db.close
 
@@ -212,9 +212,9 @@ def see_GSX_R750():
     cursor.execute(sql)
     results = cursor.fetchall()
     #Loop through all the results
-    print("\nModel         ", "Year          ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)        ", "Price (NZD)        ", "Description")
+    print("\nModel          ", "Year       ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)   ", "Price (NZD)      ", "Description")
     for motorcycle in results:
-        print(f"{motorcycle[1]:<15}{motorcycle[2]:<15}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<20}{motorcycle[7]:<20}{motorcycle[8]}")
+        print(f"{motorcycle[1]:<16}{motorcycle[2]:<12}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<15}{motorcycle[7]:<18}{motorcycle[8]}")
     #Loop finished
     db.close
 
@@ -226,9 +226,9 @@ def see_S1000RR():
     cursor.execute(sql)
     results = cursor.fetchall()
     #Loop through all the results
-    print("\nModel         ", "Year          ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)        ", "Price (NZD)        ", "Description")
+    print("\nModel         ", "Year       ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)   ", "Price (NZD)      ", "Description")
     for motorcycle in results:
-        print(f"{motorcycle[1]:<15}{motorcycle[2]:<15}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<20}{motorcycle[7]:<20}{motorcycle[8]}")
+        print(f"{motorcycle[1]:<15}{motorcycle[2]:<12}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<15}{motorcycle[7]:<18}{motorcycle[8]}")
     #Loop finished
     db.close
 
@@ -240,9 +240,9 @@ def see_Street_Triple():
     cursor.execute(sql)
     results = cursor.fetchall()
     #Loop through all the results
-    print("\nModel              ", "Year          ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)        ", "Price (NZD)        ", "Description")
+    print("\nModel              ", "Year       ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)   ", "Price (NZD)      ", "Description")
     for motorcycle in results:
-        print(f"{motorcycle[1]:<20}{motorcycle[2]:<15}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<20}{motorcycle[7]:<20}{motorcycle[8]}")
+        print(f"{motorcycle[1]:<20}{motorcycle[2]:<12}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<15}{motorcycle[7]:<18}{motorcycle[8]}")
     #Loop finished
     db.close
 
@@ -254,9 +254,9 @@ def see_Duke_390():
     cursor.execute(sql)
     results = cursor.fetchall()
     #Loop through all the results
-    print("\nModel         ", "Year          ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)        ", "Price (NZD)        ", "Description")
+    print("\nModel          ", "Year       ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)   ", "Price (NZD)      ", "Description")
     for motorcycle in results:
-        print(f"{motorcycle[1]:<15}{motorcycle[2]:<15}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<20}{motorcycle[7]:<20}{motorcycle[8]}")
+        print(f"{motorcycle[1]:<16}{motorcycle[2]:<12}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<15}{motorcycle[7]:<18}{motorcycle[8]}")
     #Loop finished
     db.close
 
@@ -268,9 +268,9 @@ def see_RSV4():
     cursor.execute(sql)
     results = cursor.fetchall()
     #Loop through all the results
-    print("\nModel         ", "Year          ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)        ", "Price (NZD)        ", "Description")
+    print("\nModel        ", "Year       ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)   ", "Price (NZD)      ", "Description")
     for motorcycle in results:
-        print(f"{motorcycle[1]:<15}{motorcycle[2]:<15}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<20}{motorcycle[7]:<20}{motorcycle[8]}")
+        print(f"{motorcycle[1]:<14}{motorcycle[2]:<12}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<15}{motorcycle[7]:<18}{motorcycle[8]}")
     #Loop finished
     db.close
 
