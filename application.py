@@ -15,9 +15,9 @@ def print_all_motorcycles():
     cursor.execute(sql)
     results = cursor.fetchall()
     #Loop through all the results
-    print("\nModel              ", "Year       ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)   ", "Price (NZD)      ")
+    print("\nModel              ", "Year       ", "Engine_Size (CC)   ", "Horsepower (hp)    ", "Top_Speed (kph)    ", "Weight (kg)   ", "Price (NZD)      ", "Description")
     for motorcycle in results:
-        print(f"{motorcycle[1]:<20}{motorcycle[2]:<12}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<15}{motorcycle[7]:<18}")
+        print(f"{motorcycle[1]:<20}{motorcycle[2]:<12}{motorcycle[3]:<20}{motorcycle[4]:<20}{motorcycle[5]:<20}{motorcycle[6]:<15}{motorcycle[7]:<18}{motorcycle[8]}")
     #Loop finished
     db.close
 
@@ -277,7 +277,7 @@ def see_RSV4():
 
 #Main Code
 while True:
-    user_input = input("\nWhat would you like to do?\n1. Print all motorcycles\n2. See years\n3. See engine sizes\n4. See horsepowers\n5. See top speeds\n6. See weights\n7. See motorcycles ordered by price\n8. See motorcycle descriptions\n9. See motorcycle manufacturers\n10. See information on a specific motorcycle\n11. Exit\n")
+    user_input = input("\nWhat would you like to see?\n1. All motorcycle data\n2. Years\n3. Engine Sizes\n4. Horsepowers\n5. Top Speeds\n6. Weights\n7. Motorcycles Ordered By Price\n8. Descriptions\n9. Manufacturers\n10. Information On a Specific Motorcycle\n11. Exit\n")
     if user_input == "1":
         print_all_motorcycles()
     elif user_input == "2":
